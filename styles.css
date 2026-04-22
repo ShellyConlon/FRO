@@ -1,0 +1,39 @@
+/* body is the selector */
+
+body {
+    background-color: black;
+    /* Decelartion (which includes property name, colon, valuve, and semicolon)*/
+}
+
+h1,
+#title {
+    text-align: center;
+    < !-- declaration -->
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    /* text-align: center; redundant dec. */
+}
+
+#title {
+    color: rgb(115, 5, 5);
+    /*changing color to a dark red for better visibility ; */
+}
+
+< !DOCTYPE html><html><head><style>.hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url('http://googleusercontent.com/image_collection/image_retrieval/8934663095599947731_0');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: 'Helvetica', sans-serif;
+}
+
+/* ... add the rest of the button styles here ... */
+</style></head><body><section class="hero-section"><div class="hero-content"><h1>NEW SEASON</h1><p>THE SUMMER COLLECTION</p><a href="#" class="hero-button">DISCOVER MORE</a></div></section></body></html>
