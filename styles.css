@@ -1,47 +1,41 @@
-body,
-html {
+body {
     margin: 0;
     padding: 0;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: rgb(255, 255, 255);
+    color: #333;
+    line-height: 1.6;
+    font-size: 1em;
 }
 
-#main-header {
-    border-bottom: 0.0625em solid rgb(240, 240, 240);
-}
-
-nav {
-    padding: 1.875em 1.25em;
+header {
+    padding: 1.25em 0;
+    border-bottom: 0.0625em solid #eee;
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
-    gap: 2.5em;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-nav a {
+nav ul li {
+    margin: 0 1.25em;
+}
+
+nav ul li a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 0.6875em;
-    letter-spacing: 0.125em;
+    color: #000;
+    font-weight: 500;
+    letter-spacing: 0.0625em;
     text-transform: uppercase;
-}
-
-nav a:hover {
-    color: rgb(100, 100, 100);
-}
-
-main,
-footer {
-    text-align: center;
+    font-size: 0.875em;
 }
 
 main {
-    padding: 5em 1.25em;
+    text-align: center;
+    padding: 3.125em 1.25em;
 }
 
 h1 {
@@ -52,16 +46,57 @@ h1 {
 }
 
 .product-image {
-    width: 100%;
-    max-width: 31.25em;
+    max-width: 100%;
     height: auto;
-    display: block;
-    margin: 0 auto 1.875em auto;
+    margin-bottom: 1.25em;
+}
+
+.page-title {
+    text-align: center;
+    margin-top: 3.125em;
+    letter-spacing: 0.25em;
+}
+
+.collections-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.875em;
+    padding: 2.5em 5%;
+    flex-wrap: wrap;
+}
+
+.collection-card {
+    flex: 1;
+    min-width: 18.75em;
+    max-width: 25em;
+    text-align: center;
+    margin-bottom: 1.875em;
+}
+
+.collection-img {
+    width: 100%;
+    height: 31.25em;
+    object-fit: cover;
+    background-color: #f9f9f9;
+    border: 0.0625em solid #f0f0f0;
+    margin-bottom: 0.9375em;
+}
+
+.collection-card h2 {
+    font-size: 1.125em;
+    letter-spacing: 0.125em;
+    margin-bottom: 0.625em;
+}
+
+.collection-card p {
+    font-size: 0.875em;
+    color: #666;
 }
 
 footer {
-    margin-top: 6.25em;
-    padding: 3.75em 1.25em;
-    background-color: rgb(252, 252, 252);
-    border-top: 0.0625em solid rgb(240, 240, 240);
+    text-align: center;
+    padding: 2.5em 0;
+    font-size: 0.75em;
+    color: #999;
+    letter-spacing: 0.0625em;
 }
