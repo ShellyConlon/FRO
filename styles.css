@@ -35,7 +35,9 @@ nav ul li a {
 
 main {
     text-align: center;
-    padding: 3.125em 1.25em;
+    padding: 3.125em 5%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -46,7 +48,8 @@ h1 {
 }
 
 .product-image {
-    max-width: 100%;
+    width: 100%;
+    max-width: 800px;
     height: auto;
     margin-bottom: 1.25em;
 }
@@ -61,7 +64,7 @@ h1 {
     display: flex;
     justify-content: center;
     gap: 1.875em;
-    padding: 2.5em 5%;
+    padding: 2.5em 0;
     flex-wrap: wrap;
 }
 
@@ -99,4 +102,60 @@ footer {
     font-size: 0.75em;
     color: #999;
     letter-spacing: 0.0625em;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2em;
+        letter-spacing: 0.2em;
+    }
+
+    .about-content {
+        padding: 0;
+    }
+
+    .collection-img {
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 2em;
+    padding: 0 1em;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    border-radius: 0.5em;
+    box-shadow: 0 0.75em 1.75em rgba(0, 0, 0, 0.08);
+}
+
+.about-text {
+    max-width: 700px;
+    text-align: left;
+}
+
+.about-text p {
+    margin-bottom: 1em;
+    color: #4a4a4a;
+    font-size: 1rem;
+    line-height: 1.75;
 }
