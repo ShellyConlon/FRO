@@ -165,31 +165,76 @@ h1 {
    ========================================================================== */
 .about-content {
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 2em;
     margin-top: 2em;
     padding: 0 1em;
 }
 
 .about-image {
-    width: 100%;
-    max-width: 420px;
+    width: 50%;
+    max-width: 600px;
     height: auto;
     border-radius: 0.5em;
     box-shadow: 0 0.75em 1.75em rgba(0, 0, 0, 0.08);
 }
 
 .about-text {
-    max-width: 700px;
-    text-align: left;
+    max-width: 600px;
+    text-align: center;
+    margin: 2em auto;
+    background-color: #fafafa;
+    padding: 2em;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.5em;
+    box-shadow: 0 0.25em 0.75em rgba(0, 0, 0, 0.05);
 }
 
 .about-text p {
-    margin-bottom: 1em;
+    margin: 0;
     color: #4a4a4a;
     font-size: 1rem;
     line-height: 1.75;
+}
+
+/* About Cards Grid */
+.about-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.875em;
+    max-width: 1100px;
+    margin: 3em auto;
+    padding: 0 1em;
+}
+
+.about-card {
+    background-color: #fafafa;
+    padding: 2em;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.5em;
+    box-shadow: 0 0.25em 0.75em rgba(0, 0, 0, 0.05);
+    text-align: left;
+    transition: box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+    box-shadow: 0 0.5em 1.25em rgba(0, 0, 0, 0.1);
+}
+
+.about-card h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0.75em;
+    color: #000;
+}
+
+.about-card p {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin: 0;
 }
 
 /* ==========================================================================
@@ -208,8 +253,9 @@ h1 {
 .contact-form {
     background-color: #fafafa;
     padding: 2em;
-    border: 1px solid #ececec;
+    border: 2px solid #000;
     border-radius: 0.5em;
+    box-shadow: 0 0.75em 2em rgba(0, 0, 0, 0.15);
 }
 
 .contact-details h2,
@@ -257,6 +303,56 @@ h1 {
     background-color: #222;
 }
 
+/* Contact Page Styling */
+.contact-page {
+    background-color: #000;
+    color: #fff;
+}
+
+.contact-page h1 {
+    color: #fff;
+}
+
+.contact-page .page-copy {
+    color: #ddd;
+}
+
+.contact-page .contact-details,
+.contact-page .contact-form {
+    background-color: #111;
+    border-color: #333;
+}
+
+.contact-page .contact-details h2,
+.contact-page .contact-form h2 {
+    color: #fff;
+}
+
+.contact-page .contact-details p,
+.contact-page .contact-form label {
+    color: #ddd;
+}
+
+.contact-page .contact-form input,
+.contact-page .contact-form textarea {
+    background-color: #222;
+    border-color: #444;
+    color: #fff;
+}
+
+.contact-page .contact-form input::placeholder,
+.contact-page .contact-form textarea::placeholder {
+    color: #999;
+}
+
+.contact-page a {
+    color: #66b3ff;
+}
+
+.contact-page a:hover {
+    color: #99ccff;
+}
+
 /* ==========================================================================
    Footer Component
    ========================================================================== */
@@ -266,6 +362,19 @@ footer {
     font-size: 0.75em;
     color: #999;
     letter-spacing: 0.0625em;
+}
+
+.contact-page~footer {
+    background-color: #000;
+    color: #bbb;
+}
+
+.contact-page~footer a {
+    color: #66b3ff;
+}
+
+.contact-page~footer a:hover {
+    color: #99ccff;
 }
 
 /* ==========================================================================
@@ -290,6 +399,11 @@ footer {
 
     .about-content {
         flex-direction: column;
+    }
+
+    .about-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5em;
     }
 
     .editorial-container {
