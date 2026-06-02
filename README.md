@@ -20,4 +20,8 @@
  <br>
  d. done 
 
- 
+ #Font Selection: 
+ <br>
+ ---google font: Montserrat (header)
+<br>
+----Font Awesome: added shopping bag logo. 
