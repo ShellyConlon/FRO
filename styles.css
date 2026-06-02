@@ -120,6 +120,43 @@ h1 {
     text-align: left;
 }
 
+.sizing-guide-section {
+    max-width: 800px;
+    margin: 4em auto;
+}
+
+.sizing-guide-section h2 {
+    font-weight: 300;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    margin-bottom: 1.5em;
+}
+
+.sizing-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sizing-table th,
+.sizing-table td {
+    padding: 1.2em 1em;
+    border-bottom: 1px solid #eee;
+}
+
+.sizing-table th {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    background-color: #fafafa;
+    color: #000;
+}
+
+.sizing-table tr:hover {
+    background-color: #fcfcfc;
+}
+
 .editorial-container {
     display: flex;
     justify-content: space-between;
@@ -423,6 +460,10 @@ footer {
 
     .contact-grid {
         grid-template-columns: 1fr;
+    }
+
+    .sizing-guide-section {
+        overflow-x: auto;
     }
 }
 
