@@ -24,6 +24,25 @@ header {
     border-bottom: 0.0625em solid #eee;
 }
 
+.logo-container {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.brand-logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.brand-logo-img {
+    height: 50px;
+    width: auto;
+}
+
 nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -443,3 +462,26 @@ footer {
 
     h1 {
         font-size: 1.1em;
+        letter-spacing: 0.16em;
+        margin-bottom: 1.75em;
+    }
+
+    .page-copy,
+    .feature-highlight,
+    .brand-story {
+        margin: 1.25em auto;
+        font-size: 0.95rem;
+    }
+
+    nav ul li {
+        margin: 0.35em 0.5em;
+    }
+
+    nav ul li a {
+        font-size: 0.7em;
+    }
+
+    .editorial-image {
+        height: 100px;
+    }
+}
