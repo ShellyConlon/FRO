@@ -24,4 +24,7 @@
  <br>
  ---google font: Montserrat (header)
 <br>
-----Font Awesome: added shopping bag logo. 
+----Font Awesome: added shopping bag logo to main page. 
+
+<br>
+#Favicon/Table addition 
