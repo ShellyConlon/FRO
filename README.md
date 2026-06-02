@@ -1,6 +1,6 @@
 # FRO
 
-#Feebdack from Peer Revieiw:
+#Feedback from Peer Review:
 <br>
    a. On the About page, to highlight their individual importance, the paragraphs might benefit from being set as cards in a grid 
    <br>
