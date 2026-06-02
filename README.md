@@ -8,6 +8,7 @@
        d. The "follow us on Instagram" link is only on the collection page I would move that to the contact us page. 
 
 #Improvements: 
+<br>
  a. added box to segregate information to add more highlight feature. 
  <br>
  b. added then deleted, did not like the preception it added. Will need to think on this more down the road. 
