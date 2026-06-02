@@ -9,8 +9,11 @@
 
 #Improvements: 
  a. added box to segregate information to add more highlight feature. 
+ <br>
  b. added then deleted, did not like the preception it added. Will need to think on this more down the road. 
+ <br>
  c. done
+ <br>
  d. done 
 
  
